@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Launch Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../shared/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../shared/css/tema.css">
+<style type="text/css" media="screen">
+.conteudo,.pergunta{background-repeat:no-repeat;background-size:100%}@font-face{font-family:urw-LightItalic;src:url(../shared/fontes/URWDIN-LightItalic.otf)}@font-face{font-family:urw-demi;src:url(../shared/fontes/URWDIN-Demi.otf)}#contentFrame{height:100%;margin-top:-1px;width:100%;padding-left:0;padding-right:0}.pergunta{background-image:url(image/pergunta.png)}.conteudo{background-image:url()}#chkbox1,#chkbox2,#chkbox3{position:fixed;height:4%}#txtTitulo{font:2.7em urw-demi,Arial,Tahoma,Sans-serif;color:#FFF;width:100%;text-align:center;margin-bottom:6px}#dvtxtPergunta,.labelOption{color:#FFF;width:100%;text-align:left}#btnAction{position:fixed;height:6%}#dvtxtPergunta{font:1.79em urw-demi,Arial,Tahoma,Sans-serif;margin-bottom:12px}.labelOption{font:1.59em urw-LightItalic,Arial,Tahoma,Sans-serif;margin-left:0}.form-group{margin-left:2%}.col-md-1{width:4.33%}.col-md-11{margin-bottom:2%}#video{margin-left:0;margin-right:0;padding:0;z-index:0;width:100%}.controlDiv{position:absolute;top:92%;text-align:center;width:100%}.btnNavigation{width:3.65%}
+</style>
+</head>
+<body id="corpo">
+	<div id="contentFrame">
+		<div id="dvconteudo">
+			<div id="navHead"></div>
+			<video id="video" autoplay="autoplay" >
+				<source src="video/conteudo/video1.ogg" type="video/ogg">
+			</video>
+			<input type="hidden" id="time"> <input type="hidden" id="duracao">
+		</div>
+		<div id="dvpergunta" class="container" style="margin-top: 13%">
+			<div>
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<label id="txtTitulo"></label>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+			<div>
+				<div class="col-md-12">
+					<label id="dvtxtPergunta"> </label>
+				</div>
+			</div>
+			<div>
+				<div class="col-md-1">
+					<img id="chkbox1" src="../shared/image/chkBranco.png" alt="">
+				</div>
+				<div class="col-md-11">
+					<label id="lblAnwser1" class="labelOption">S8CW</label>
+				</div>
+			</div>
+			<div>
+				<div class="col-md-1">
+					<img id="chkbox2" src="../shared/image/chkBranco.png" alt="">
+				</div>
+				<div class="col-md-11">
+					<label id="lblAnwser2" class="labelOption">S6BR</label>
+				</div>
+			</div>
+			<div>
+				<div class="col-md-1">
+					<img id="chkbox3" src="../shared/image/chkBranco.png" alt="">
+				</div>
+				<div class="col-md-11">
+					<label id="lblAnwser3" class="labelOption">S8KC</label>
+				</div>
+			</div>
+			<div>
+				<div class="col-md-5"></div>
+				<div class="col-md-4">
+					<img id="btnAction" src="../shared/image/txtResponder.png" alt="">
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+		</div>
+		<div class="controlDiv">
+			<input class="btnNavigation" type="image" src="image/setaEsquerda.png" value="" id="btnPrev"> <input class="btnNavigation" type="image" src="image/setaDireita.png" value="Proximo ->" id="btnNext">
+		</div>
+		<script src="../shared/js/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
+		<script src="../shared/js/jquery/jQuery.tmpl.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/control/Navegador.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/control/Tela.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/control/Question.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/control/Test.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/control/Page.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/control/Modulo.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/control/Content.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/control/Apresentacao.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/control/Aluno.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/control/Pergunta.js" type="text/javascript"></script>
+		<script src="../shared/js/common.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/scorm/Scorm.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/control/CheckBox.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/video/SourceVideo.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/video/TimeLine.js" type="text/javascript"></script>
+		<script src="../shared/js/componente/video/Video.js" type="text/javascript"></script>
+		<script src="js/launchpage.js" type="text/javascript"></script>
+	</div>
+</body>
+</html>
