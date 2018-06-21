@@ -169,7 +169,7 @@ function testeButon() {
 function initApresentacao() {
 	apresentacao = new Apresentacao();
 	apresentacao.add("conteudo", SLIDE_TYPE_CONTEUDOINICIAL);
-	for (var i = 1; i <= 7; i++) {
+	for (var i = 1; i <= 6; i++) {
 		apresentacao.add("conteudo", SLIDE_TYPE_CONTEUDO);
 	}
 	apresentacao.add("pergunta", SLIDE_TYPE_PERGUNTA);

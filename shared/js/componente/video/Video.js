@@ -20,7 +20,7 @@ var Video = function(id) {
 			this.sourceAtual = posicao;
 		}
 		$(idVideo + ' source').parent().attr('src', src);
-		//$(idVideo).parent().load();
+		$(idVideo).parent().load();
 		
 
 	};

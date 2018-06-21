@@ -6,9 +6,9 @@ var CheckBox = function(id) {
 	this.ative = function(value) {
 		this.ativo = value;
 		if (value == true) {
-			$('#' + this.id).attr('src', '../shared/image/chkSelected.png');
+			$('#' + this.id).attr('src', 'image/chkSelected.png');
 		} else {
-			$('#' + this.id).attr('src', '../shared/image/chkBranco.png');
+			$('#' + this.id).attr('src', 'image/chkBranco.png');
 		}
 	}
 
@@ -16,17 +16,17 @@ var CheckBox = function(id) {
 		var acertou = false;
 		if (this.ativo == true) {
 			if (value == true) {
-				$('#' + this.id).attr('src', '../shared/image/certo.png');
+				$('#' + this.id).attr('src', 'image/certo.png');
 				acertou = true;
 			} else {
-				$('#' + this.id).attr('src', '../shared/image/errado.png');
+				$('#' + this.id).attr('src', 'image/errado.png');
 			}	
 		}else{
 			this.exibir(0.5);	
 			if (value == true) {
-				$('#' + this.id).attr('src', '../shared/image/certo.png');
+				$('#' + this.id).attr('src', 'image/certo.png');
 			} else {
-				$('#' + this.id).attr('src', '../shared/image/errado.png');
+				$('#' + this.id).attr('src', 'image/errado.png');
 			}
 		}
 		return acertou;
